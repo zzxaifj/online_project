@@ -44,5 +44,12 @@ export default {
         method: 'put',
         data: teacher
     })
+  },
+  //更新方法
+  getListTeacher() {
+    return request({
+        url: `${api_name}/findAllTeacher`,
+        method: 'get'
+    })
   }
 }
